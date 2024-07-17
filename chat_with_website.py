@@ -1,4 +1,5 @@
 import os
+import streamlit.components.v1 as components
 from dotenv import load_dotenv
 import streamlit as st
 from langchain.chains import RetrievalQA
