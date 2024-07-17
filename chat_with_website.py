@@ -9,19 +9,19 @@ from langchain.prompts.chat import (ChatPromptTemplate, HumanMessagePromptTempla
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 
-st.markdown(
+components.html(
     """
-    <style>
-    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
-    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-    .viewerBadge_text__1JaDK {
-        display: none;
-    }
-    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const githubButton = document.querySelector('a[href="https://github.com/streamlit"]');
+        if (githubButton) {
+            githubButton.style.display = 'none';
+        }
+    });
+    </script>
     """,
-    unsafe_allow_html=True
+    height=0,
 )
-
 
 load_dotenv()
 api_key = os.getenv("api_key")
