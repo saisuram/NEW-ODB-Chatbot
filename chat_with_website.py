@@ -9,6 +9,14 @@ from langchain.prompts.chat import (ChatPromptTemplate, HumanMessagePromptTempla
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+
 load_dotenv()
 api_key = os.getenv("api_key")
 
