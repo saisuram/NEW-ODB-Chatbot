@@ -47,7 +47,7 @@ chain_type_kwargs = {"prompt": prompt}
 # Define function to load and prepare documents
 def load_and_prepare_documents():
     # Load data from the specified URL
-    loader = WebBaseLoader(['https://www.ourdailybreadmot.com/', 'https://www.ourdailybreadmot.com/blog', 'https://www.ourdailybreadmot.com/about_us', 'https://www.ourdailybreadmot.com/board-of-directors', 'https://www.ourdailybreadmot.com/contact', 'https://www.ourdailybreadmot.com/training', 'https://www.ourdailybreadmot.com/get_involved', 'https://www.ourdailybreadmot.com/forms'])
+    loader = WebBaseLoader(['https://www.ourdailybreadmot.com/', 'https://www.ourdailybreadmot.com/about-us', 'https://www.ourdailybreadmot.com/mission-and-vision', 'https://www.ourdailybreadmot.com/location-and-directions', 'https://www.ourdailybreadmot.com/our-history', 'https://www.ourdailybreadmot.com/get-involved', 'https://www.ourdailybreadmot.com/volunteer', 'https://www.ourdailybreadmot.com/copy-of-volunteer', 'https://www.ourdailybreadmot.com/copy-of-volunteer-1', 'https://www.ourdailybreadmot.com/copy-of-mobilize-service-group', 'https://www.ourdailybreadmot.com/learn-more', 'https://www.ourdailybreadmot.com/volunteer-training', 'https://www.ourdailybreadmot.com/copy-of-learn-more', 'https://www.ourdailybreadmot.com/useful-documents', 'https://www.ourdailybreadmot.com/blog', 'https://www.ourdailybreadmot.com/contact'])
     data = loader.load()
 
     # Split the loaded data into chunks
